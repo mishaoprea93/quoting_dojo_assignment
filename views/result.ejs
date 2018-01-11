@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quotes Page</title>
+</head>
+
+<body>
+    <h1>Here are the awsome quotes!</h1>
+    <br>
+    <br>
+    <br>
+    <%for (var x in quotes){%>
+        <div>
+            <p>
+                <%= quotes[x].quote %>
+            </p>
+            <p>
+
+                <h3>
+                    Added by:
+                    <%= quotes[x].name %> at
+                        <%= quotes[x].createdAt %>
+                </h3>
+            </p>
+        </div>
+        <% } %>
+
+
+</body>
+
+</html>
